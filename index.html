@@ -8,8 +8,15 @@
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
 
-        border: 1.5em solid palegreen;
+        border: 1.5em solid lawngreen;
         margin: 0;
+      }
+      .wrapper {
+        align-items: center;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 3em);
       }
 
       .header.please-wait {
@@ -31,14 +38,16 @@
     </style>
   </head>
   <body>
-    <span class="header please-wait">
-      Please Wait
-    </span><br/>
-    <span class="header brb">
-      I WILL BE<br/>RIGHT BACK
-    </span><br/>
-    <span class="footer">
-      SORRY FOR THE INCONVENIENCE
+    <div class="wrapper">
+      <span class="header please-wait">
+        Please Wait
+      </span><br/>
+      <span class="header brb">
+        I WILL BE<br/>RIGHT BACK
+      </span><br/>
+      <span class="footer">
+        SORRY FOR THE INCONVENIENCE
+      </span>
     </div>
   </body>
 </html>
